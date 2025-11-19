@@ -1397,6 +1397,7 @@ function AboutPage({ darkMode }) {
   );
 }
 
-// Render the application
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<LAREXplorer />);
+ReactDOM.render(
+  <LAREXplorer />,
+  document.getElementById('root')
+);
