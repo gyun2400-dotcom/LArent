@@ -2,25 +2,25 @@
 const { useState, useMemo } = React;
 const { BarChart, Bar, LineChart, Line, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } = Recharts;
 
-// Lucide Icons
-const Home = lucide.Home;
-const BarChart3 = lucide.BarChart3;
-const Calculator = lucide.Calculator;
-const Map = lucide.Map;
-const TrendingUp = lucide.TrendingUp;
-const Book = lucide.Book;
-const Info = lucide.Info;
-const Menu = lucide.Menu;
-const X = lucide.X;
-const Search = lucide.Search;
-const MapPin = lucide.MapPin;
-const DollarSign = lucide.DollarSign;
-const Bed = lucide.Bed;
-const Bath = lucide.Bath;
-const Square = lucide.Square;
-const Building = lucide.Building;
-const Car = lucide.Car;
-const Sofa = lucide.Sofa;
+// Icons: use simple emoji components instead of Lucide (for GitHub Pages)
+const Home = (props) => React.createElement('span', props, '🏠');
+const BarChart3 = (props) => React.createElement('span', props, '📊');
+const Calculator = (props) => React.createElement('span', props, '🧮');
+const Map = (props) => React.createElement('span', props, '🗺️');
+const TrendingUp = (props) => React.createElement('span', props, '📈');
+const Book = (props) => React.createElement('span', props, '📘');
+const Info = (props) => React.createElement('span', props, 'ℹ️');
+const Menu = (props) => React.createElement('span', props, '☰');
+const X = (props) => React.createElement('span', props, '✖');
+const Search = (props) => React.createElement('span', props, '🔍');
+const MapPin = (props) => React.createElement('span', props, '📍');
+const DollarSign = (props) => React.createElement('span', props, '💲');
+const Bed = (props) => React.createElement('span', props, '🛏️');
+const Bath = (props) => React.createElement('span', props, '🛁');
+const Square = (props) => React.createElement('span', props, '⬜');
+const Building = (props) => React.createElement('span', props, '🏢');
+const Car = (props) => React.createElement('span', props, '🚗');
+const Sofa = (props) => React.createElement('span', props, '🛋️');
 
 // Sample data
 const neighborhoodsData = [
