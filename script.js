@@ -1,6 +1,20 @@
 // React and library globals
 const { useState, useMemo } = React;
-const { BarChart, Bar, LineChart, Line, ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, Cell } = Recharts;
+const {
+  BarChart,
+  Bar,
+  LineChart,
+  Line,
+  ScatterChart,
+  Scatter,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+  Cell,
+} = window.Recharts || {};
 
 // Icons: use simple emoji components instead of Lucide (for GitHub Pages)
 const Home = (props) => React.createElement('span', props, '🏠');
