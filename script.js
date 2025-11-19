@@ -1,4 +1,3 @@
-// React and library globals
 const { useState, useMemo } = React;
 const {
   BarChart,
